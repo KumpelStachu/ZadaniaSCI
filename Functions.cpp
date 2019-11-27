@@ -12,25 +12,25 @@ int square(int value)
 	return value * value;
 }
 
-//Funkcja zwraca szeœcian liczby
+//Funkcja zwraca szeÅ“cian liczby
 int cube(int value)
 {
 	return value * value * value;
 }
 
-//Funkcja zwraca pole prostok¹ta
+//Funkcja zwraca pole prostokÂ¹ta
 int rectangleArea(int a, int b)
 {
 	return a * b;
 }
 
-//Funkcja zwraca mniejsz¹ z liczb
+//Funkcja zwraca mniejszÂ¹ z liczb
 int smaller(int a, int b)
 {
 	return a < b ? a : b;
 }
 
-//Funkcja zwraca wiêksz¹ z liczb
+//Funkcja zwraca wiÃªkszÂ¹ z liczb
 int bigger(int a, int b)
 {
 	return a > b ? a : b;
@@ -42,25 +42,25 @@ int product3(int a, int b, int c)
 	return a * b * c;
 }
 
-//Funkcja zwraca prawdê, gdy liczby s¹ równe
+//Funkcja zwraca prawdÃª, gdy liczby sÂ¹ rÃ³wne
 bool same(int a, int b)
 {
 	return a == b;
 }
 
-//Funkcja zwraca prawdê, jeœli suma liczb jest dodatnia, w przeciwnym wypadku zwraca fa³sz
-bool isSumEven(int a, int b, int c)
+//Funkcja zwraca prawdÃª, jeÅ“li suma liczb jest dodatnia, w przeciwnym wypadku zwraca faÂ³sz
+bool isSumPositive(int a, int b, int c)
 {
-	return !((a + b + c) % 2);
+	return (a + b + c) > 0;
 }
 
-//Funkcja zwraca pole trójk¹ta
+//Funkcja zwraca pole trÃ³jkÂ¹ta
 int triangleArea(int a, int h)
 {
 	return a * h / 2;
 }
 
-//Funkcja zwraca iloœæ elementów dodatnich
+//Funkcja zwraca iloÅ“Ã¦ elementÃ³w dodatnich
 int positive(int tab[], int size)
 {
 	int p = 0;
@@ -70,7 +70,7 @@ int positive(int tab[], int size)
 	return p;
 }
 
-//Funkcja zwraca iloœæ elementów ujemnych
+//Funkcja zwraca iloÅ“Ã¦ elementÃ³w ujemnych
 int negative(int tab[], int size)
 {
 	int n = 0;
@@ -80,7 +80,7 @@ int negative(int tab[], int size)
 	return n;
 }
 
-//Funkcja zwraca sumê wszystkich elementów tablicy
+//Funkcja zwraca sumÃª wszystkich elementÃ³w tablicy
 int tabSum(int tab[], int size)
 {
 	int sum = 0;
@@ -89,7 +89,7 @@ int tabSum(int tab[], int size)
 	return sum;
 }
 
-//Funkcja zwraca œredni¹ arytmetyczn¹ wszystkich elementów tablicy
+//Funkcja zwraca Å“redniÂ¹ arytmetycznÂ¹ wszystkich elementÃ³w tablicy
 float average(int tab[], int size)
 {
 	int sum = 0;
@@ -107,41 +107,41 @@ void flipSign(float tab[], int size)
 	}
 }
 
-//Funkcja zwraca prawdê jeœli parametr jest parzysty lub fa³sz jeœli jest nieparzysty
+//Funkcja zwraca prawdÃª jeÅ“li parametr jest parzysty lub faÂ³sz jeÅ“li jest nieparzysty
 bool isEven(int value)
 {
 	return !(value % 2);
 }
 
-//Funkcja zwiêksza ka¿dy element tablicy o dowoln¹ wartoœæ ca³kowit¹
+//Funkcja zwiÃªksza kaÂ¿dy element tablicy o dowolnÂ¹ wartoÅ“Ã¦ caÂ³kowitÂ¹
 void increase(int tab[], int size, int value)
 {
 	for (int i = 0; i < size; i++)
 		tab[i] += value;
 }
 
-//Funkcja mno¿y ka¿dy element tablicy o dowoln¹ wartoœæ ca³kowit¹
+//Funkcja mnoÂ¿y kaÂ¿dy element tablicy o dowolnÂ¹ wartoÅ“Ã¦ caÂ³kowitÂ¹
 void multiply(int tab[], int size, int value)
 {
 	for (int i = 0; i < size; i++)
 		tab[i] *= value;
 }
 
-//Funkcja modyfikuje elementy tablicy w taki sposób, ¿e ka¿dy kolejny element tablicy jest o 5 wiêkszy od poprzedniego
+//Funkcja modyfikuje elementy tablicy w taki sposÃ³b, Â¿e kaÂ¿dy kolejny element tablicy jest o 5 wiÃªkszy od poprzedniego
 void greater5(int tab[], int size)
 {
 	for (int i = 1; i < size; i++)
 		tab[i] = tab[i - 1] + 5;
 }
 
-//Funkcja modyfikuje elementy tablicy w taki sposób, ¿e ka¿dy kolejny element tablicy jest dwa razy wiêkszy od poprzedniego
+//Funkcja modyfikuje elementy tablicy w taki sposÃ³b, Â¿e kaÂ¿dy kolejny element tablicy jest dwa razy wiÃªkszy od poprzedniego
 void twoTimesGreater(int tab[], int size)
 {
 	for (int i = 1; i < size; i++)
 		tab[i] = tab[i - 1] * 2;
 }
 
-//Funkcja modyfikuje elementy tablicy w taki sposób, ¿e ka¿dy kolejny element tablicy jest dwa razy mniejszy od poprzedniego
+//Funkcja modyfikuje elementy tablicy w taki sposÃ³b, Â¿e kaÂ¿dy kolejny element tablicy jest dwa razy mniejszy od poprzedniego
 void twoTimesLesser(float tab[], int size)
 {
 	for (int i = 1; i < size; i++)
